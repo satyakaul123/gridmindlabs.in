@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="img/gridmind-logo.png" type="image/png">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
@@ -25,23 +26,23 @@
 <nav class="nav" id="nav">
   <a href="index.html" class="nav__logo">GridMind</a>
   <ul class="nav__links">
-    <li><a href="platform.html">Deliverables</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="moat.html">Our Approach</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="platform.html" title="What you receive — financial models, decks, reports">Deliverables</a></li>
+    <li><a href="services.html" title="Advisory services across India's energy sector">Services</a></li>
+    <li><a href="moat.html" title="How we ensure accuracy and quality">Our Approach</a></li>
+    <li><a href="about.html" title="Our story and founder">About</a></li>
+    <li><a href="contact.html" title="Get in touch or request a briefing">Contact</a></li>
     <li><button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">&#9790;</button></li>
   </ul>
   <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
   <div class="nav__overlay" id="navOverlay">
-    <a href="platform.html">Deliverables</a>
-    <a href="services.html">Services</a>
-    <a href="moat.html">Our Approach</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <button class="nav__theme" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button>
+    <a href="platform.html" title="What you receive">Deliverables</a>
+    <a href="services.html" title="Advisory services">Services</a>
+    <a href="moat.html" title="How we ensure quality">Our Approach</a>
+    <a href="about.html" title="Our story">About</a>
+    <a href="contact.html" title="Get in touch">Contact</a>
+    <button class="nav__theme" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">&#9790;</button>
   </div>
 </nav>
 
@@ -69,9 +70,8 @@
         <div class="moat-item__num">1</div>
         <div>
           <p style="font-family:var(--sf);font-size:20px;font-weight:600;margin-bottom:14px">Deterministic Computation</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">When you receive a financial model from GridMind, the IRR, NPV, DSCR, depreciation schedules, and debt service calculations are computed by validated, deterministic formulas &mdash; the same way a financial engineer would build a model by hand.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">The AI's role is scoping: it researches your project parameters, determines the right assumptions, and structures the analysis. The mathematical engine that computes results from those assumptions is fixed code &mdash; tested, validated, and incapable of hallucination.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">This is why the model produces zero formula errors. The numbers are correct not because we checked them &mdash; but because the computation cannot be wrong.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">IRR, NPV, DSCR, depreciation, debt service &mdash; all computed by validated, deterministic formulas. The AI scopes your assumptions; the mathematical engine computes everything else. Fixed code, zero hallucination.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">The numbers are correct not because we checked them &mdash; but because the computation cannot be wrong.</p>
         </div>
       </div>
     </div>
@@ -82,9 +82,8 @@
         <div class="moat-item__num">2</div>
         <div>
           <p style="font-family:var(--sf);font-size:20px;font-weight:600;margin-bottom:14px">Live Intelligence</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Research is conducted in real-time at the moment you submit your query. When your analysis references a tariff order, an auction result, a policy change, or a market benchmark &mdash; it reflects conditions as they exist right now.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">GridMind maintains a continuously growing domain knowledge base covering Indian energy regulation, technology parameters, and market data. This institutional memory means each analysis benefits from everything we've learned across engagements &mdash; but the live research ensures nothing is stale.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Sources are cited inline. You can verify every data point.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Research runs in real-time when you submit your query. Tariff orders, auction results, policy changes &mdash; all reflect current conditions, not training data. A growing domain knowledge base of 10,000+ entities compounds across engagements.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Sources cited inline. Every data point verifiable.</p>
         </div>
       </div>
     </div>
@@ -95,9 +94,8 @@
         <div class="moat-item__num">3</div>
         <div>
           <p style="font-family:var(--sf);font-size:20px;font-weight:600;margin-bottom:14px">Domain Expertise</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">GridMind is built specifically for Indian energy. The platform understands CERC tariff norms, SERC state-level variations, SECI auction mechanics, RPO obligations, DSM penalties, GNA rules, and technology-specific parameters from CUF benchmarks to degradation curves.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">This isn't general-purpose AI producing plausible-sounding text. When GridMind models a solar project, it knows that CUF in Rajasthan differs from Gujarat, that ALMM compliance affects module selection, and that ISTS waiver eligibility changes the grid interconnection calculus.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">The depth of domain specialization is what separates investment-grade analysis from AI-assisted guessing.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Purpose-built for Indian energy. CERC/SERC tariff norms, SECI auction mechanics, RPO obligations, DSM penalties, GNA rules, CUF benchmarks, degradation curves &mdash; all encoded, not guessed.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">When GridMind models a solar project, it knows Rajasthan CUF differs from Gujarat, that ALMM affects module selection, and that ISTS waiver changes the interconnection calculus.</p>
         </div>
       </div>
     </div>
@@ -108,9 +106,8 @@
         <div class="moat-item__num">4</div>
         <div>
           <p style="font-family:var(--sf);font-size:20px;font-weight:600;margin-bottom:14px">Adversarial Quality Review</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Every deliverable passes through an independent review before reaching you. This isn't a formatting check &mdash; it's a structured adversarial assessment where the analysis is challenged on its methodology, its assumptions, and its arithmetic.</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Financial model assumptions are stress-tested against domain benchmarks. Research claims are cross-referenced. Quantitative outputs are checked for internal consistency &mdash; does the DSCR imply a debt level consistent with the CAPEX? Does the tariff assumption match the auction vintage?</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Outputs that don't meet our quality threshold are automatically revised and re-reviewed. The quality critique is included in your deliverable set &mdash; you see exactly what was challenged and how it was resolved.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:12px">Every deliverable is independently challenged on methodology, assumptions, and arithmetic before delivery. Assumptions stress-tested against benchmarks. Quantitative outputs cross-checked for internal consistency.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Below-threshold work is automatically revised. The quality critique is included in your deliverable set &mdash; full transparency.</p>
         </div>
       </div>
     </div>
@@ -125,7 +122,7 @@
       <div class="sl">REGULATORY DEPTH</div>
       <div class="st">Built for India's Regulatory Landscape</div>
       <div class="hrl"></div>
-      <div class="sd">India's power sector is governed by an intricate web of central and state regulators, each with distinct tariff methodologies, compliance requirements, and policy frameworks. GridMind's domain intelligence covers this entire landscape.</div>
+      <div class="sd">Central and state regulators, each with distinct tariff methodologies and compliance frameworks. GridMind covers them all.</div>
     </div>
 
     <div class="g3" data-animate data-delay="2">
@@ -162,8 +159,7 @@
       <div class="hrl"></div>
     </div>
     <div data-animate data-delay="2" style="max-width:680px">
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">GridMind's domain intelligence grows with every analysis. Lessons from past engagements &mdash; what assumptions held, what regulatory changes mattered, what data sources proved most reliable &mdash; are systematically extracted and applied to future work.</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Your analysis benefits from the accumulated expertise of every project GridMind has completed. Client data remains strictly isolated, but the analytical judgment compounds.</p>
+      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Every engagement sharpens the next. Lessons &mdash; which assumptions held, which data sources proved reliable &mdash; are extracted and applied automatically. Client data stays isolated; analytical judgment compounds.</p>
     </div>
   </div>
 </section>

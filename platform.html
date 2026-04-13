@@ -14,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="img/gridmind-logo.png" type="image/png">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/components.css">
@@ -27,23 +28,23 @@
 <nav class="nav" id="nav">
   <a href="index.html" class="nav__logo">GridMind</a>
   <ul class="nav__links">
-    <li><a href="platform.html">Deliverables</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="moat.html">Our Approach</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="platform.html" title="What you receive — financial models, decks, reports">Deliverables</a></li>
+    <li><a href="services.html" title="Advisory services across India's energy sector">Services</a></li>
+    <li><a href="moat.html" title="How we ensure accuracy and quality">Our Approach</a></li>
+    <li><a href="about.html" title="Our story and founder">About</a></li>
+    <li><a href="contact.html" title="Get in touch or request a briefing">Contact</a></li>
     <li><button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">&#9790;</button></li>
   </ul>
   <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
     <span></span><span></span><span></span>
   </button>
   <div class="nav__overlay" id="navOverlay">
-    <a href="platform.html">Deliverables</a>
-    <a href="services.html">Services</a>
-    <a href="moat.html">Our Approach</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <button class="nav__theme" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button>
+    <a href="platform.html" title="What you receive">Deliverables</a>
+    <a href="services.html" title="Advisory services">Services</a>
+    <a href="moat.html" title="How we ensure quality">Our Approach</a>
+    <a href="about.html" title="Our story">About</a>
+    <a href="contact.html" title="Get in touch">Contact</a>
+    <button class="nav__theme" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">&#9790;</button>
   </div>
 </nav>
 
@@ -56,7 +57,7 @@
       <div class="sl">DELIVERABLES</div>
       <div class="st">What You Receive</div>
       <div class="hrl"></div>
-      <div class="sd">Every engagement produces a complete set of investment-grade outputs &mdash; each formatted for its audience, each independently reviewed for quality.</div>
+      <div class="sd">Every engagement produces a complete set of investment-grade outputs &mdash; formatted for its audience and independently reviewed before delivery.</div>
     </div>
   </div>
 </section>
@@ -71,7 +72,7 @@
         <div style="flex:1;min-width:280px">
           <div class="tag tag--primary" style="margin-bottom:14px">.XLSX</div>
           <p style="font-family:'Playfair Display',serif;font-size:clamp(22px,3vw,28px);font-weight:600;line-height:1.2;margin-bottom:16px">Financial Model</p>
-          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:18px">A deterministic financial model where every formula &mdash; IRR, NPV, DSCR, depreciation, debt service &mdash; is validated mathematics, not AI-generated calculation. The AI scopes your assumptions and revenue projections; the financial engine computes everything else with zero tolerance for error.</p>
+          <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:18px">Every formula &mdash; IRR, NPV, DSCR, depreciation, debt service &mdash; is validated mathematics, not AI-generated calculation. The AI scopes assumptions and revenue projections; the financial engine computes everything else deterministically.</p>
           <p style="font-size:13px;color:var(--ink-mid);line-height:1.7">Includes Monte Carlo simulation with 2,000 iterations across revenue, OPEX, CAPEX, and interest rate variables. Sensitivity analysis across your key parameters.</p>
         </div>
 
@@ -166,7 +167,7 @@
     <div class="c" data-animate>
       <div class="tag tag--primary" style="margin-bottom:14px">.PDF</div>
       <p style="font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,24px);font-weight:600;line-height:1.2;margin-bottom:16px">Cited Research &amp; Market Intelligence</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:16px">Real-time market data, policy analysis, and competitive intelligence &mdash; every claim backed by a verifiable source. We search live data at the time of your query, so the analysis reflects conditions as they are, not as they were.</p>
+      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:16px">Real-time market data, policy analysis, and competitive intelligence &mdash; every claim backed by a verifiable source. Live data at the time of your query, not stale training data.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px">
         <span class="tag">Tariff Orders</span>
         <span class="tag">Auction Results</span>
@@ -186,8 +187,7 @@
     <div class="c" data-animate>
       <div class="tag tag--primary" style="margin-bottom:14px">REVIEW</div>
       <p style="font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,24px);font-weight:600;line-height:1.2;margin-bottom:16px">Independent Quality Critique</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">Before any deliverable reaches you, it passes through an independent review process. Financial assumptions are challenged. Research claims are cross-checked. Quantitative outputs are stress-tested for internal consistency.</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">Outputs that fall below our quality threshold are revised and re-reviewed. You receive the final version, not the first draft.</p>
+      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">Every deliverable passes through an independent review: assumptions challenged, research cross-checked, quantitative outputs stress-tested. Work below threshold is revised before delivery.</p>
       <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">The quality critique itself is included in your deliverable set &mdash; full transparency on what was challenged and how it was resolved.</p>
     </div>
   </div>
@@ -199,7 +199,7 @@
     <div class="c" data-animate>
       <div class="tag tag--primary" style="margin-bottom:14px">SUMMARY</div>
       <p style="font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,24px);font-weight:600;line-height:1.2;margin-bottom:16px">Decision-Ready Brief</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">A concise synthesis for stakeholders who need the conclusion without reading the full analysis. Key metrics, core finding, risk factors, and recommendation &mdash; structured for immediate action.</p>
+      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">Key metrics, core finding, risk factors, and recommendation &mdash; structured for stakeholders who need the answer, not the full report.</p>
       <p style="font-size:14px;color:var(--ink-mid);line-height:1.7">Formatted for direct sharing on professional networks or internal distribution.</p>
     </div>
   </div>
@@ -211,7 +211,7 @@
     <div class="c" data-animate>
       <div class="tag tag--primary" style="margin-bottom:14px">CODE</div>
       <p style="font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,24px);font-weight:600;line-height:1.2;margin-bottom:16px">Simulations, Optimization &amp; Dashboards</p>
-      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">When your analysis requires it: dispatch optimization, capacity planning models, power flow simulations, or interactive dashboards. Custom Python code is generated, executed in a sandboxed environment, and the results are integrated into your deliverable set.</p>
+      <p style="font-size:14px;color:var(--ink-mid);line-height:1.7;margin-bottom:14px">Dispatch optimization, capacity planning, power flow simulations, or interactive dashboards &mdash; generated, executed in a sandbox, and integrated into your deliverables.</p>
       <p style="font-size:13px;color:var(--ink-mid);line-height:1.7">Supports: linear programming (CPLEX), Monte Carlo simulation, scenario analysis, time-series modeling.</p>
     </div>
   </div>
@@ -227,7 +227,7 @@
 
       <div class="c">
         <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;margin-bottom:8px">Deterministic Financial Engine</p>
-        <p style="font-size:13px;color:var(--ink-mid);line-height:1.6">Core financial formulas are hardcoded and validated &mdash; not generated by AI on the fly. The AI scopes assumptions; the engine computes results. This is why your IRR is always correct.</p>
+        <p style="font-size:13px;color:var(--ink-mid);line-height:1.6">Financial formulas are hardcoded and validated &mdash; not generated on the fly. AI scopes assumptions; the engine computes results. Your IRR is always correct.</p>
       </div>
 
       <div class="c">
@@ -237,7 +237,7 @@
 
       <div class="c">
         <p style="font-family:'Playfair Display',serif;font-size:15px;font-weight:600;margin-bottom:8px">Integrated Quality Gate</p>
-        <p style="font-size:13px;color:var(--ink-mid);line-height:1.6">Every output is independently reviewed against domain-specific criteria before delivery. This is not a spell-check &mdash; it is a structured adversarial review of methodology, assumptions, and arithmetic.</p>
+        <p style="font-size:13px;color:var(--ink-mid);line-height:1.6">Every output is independently reviewed before delivery &mdash; a structured review of methodology, assumptions, and arithmetic, not a spell-check.</p>
       </div>
 
     </div>
