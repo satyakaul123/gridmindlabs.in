@@ -1,0 +1,75 @@
+/* ═══════════════════════════════════════════════════════════════
+   GridMind Design Tokens
+   Extracted from: mission_control.html, GridMind_Brand_Brief.html
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Light theme (default — GridMind Brand) */
+  --bg: #F5F2EC;
+  --bg-card: #FFFFFF;
+  --bg-sidebar: #2D3142;
+  --bg-topbar: #FFFFFF;
+  --ink: #2D3142;
+  --ink-mid: #4A4E5E;
+  --ink-light: #7A7E8E;
+  --ink-faint: #B0B3BE;
+  --rule: #C5C0B6;
+  --rl: #DDD8CE;
+  --bg-hover: rgba(45,49,66,0.04);
+  --bg-active: rgba(45,49,66,0.08);
+
+  /* Semantic */
+  --success: #008000;
+  --danger: #CC0000;
+  --warn: #B8860B;
+
+  /* Agent colors */
+  --c-ceo: #C5A000;
+  --c-coo: #4682B4;
+  --c-hr: #8B6FAE;
+  --c-researcher: #2E8B57;
+  --c-excel: #D2691E;
+  --c-coder: #0097A7;
+  --c-presenter: #C2185B;
+  --c-challenger: #8B3A3A;
+  --c-social: #2E7BB8;
+  --c-reader: #6D4C41;
+
+  /* Typography */
+  --sc: 'Spectral SC', 'Spectral', Georgia, serif;
+  --sf: 'Playfair Display', Georgia, serif;
+  --bd: 'Cormorant Garamond', Georgia, serif;
+  --dv: 'Noto Sans Devanagari', sans-serif;
+
+  /* Fluid type */
+  --fs-hero: clamp(36px, 6vw, 62px);
+  --fs-title: clamp(28px, 4vw, 38px);
+  --fs-subtitle: clamp(18px, 2.5vw, 24px);
+  --fs-body: clamp(15px, 1.5vw, 18px);
+
+  /* Layout */
+  --max-w: 1060px;
+  --nav-h: 56px;
+
+  /* Transitions */
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ── Dark Theme ─────────────────────────────────────────────── */
+[data-theme="dark"] {
+  --bg: #0B0D1A;
+  --bg-card: #111326;
+  --bg-sidebar: #0D0F1E;
+  --bg-topbar: #111326;
+  --ink: #F0F0F5;
+  --ink-mid: #B4B8C8;
+  --ink-light: #6B7085;
+  --ink-faint: #454860;
+  --rule: #2A2D45;
+  --rl: #1E2035;
+  --bg-hover: rgba(255,255,255,0.04);
+  --bg-active: rgba(255,255,255,0.08);
+  --success: #2ECC71;
+  --danger: #E74C3C;
+  --warn: #DAA520;
+}

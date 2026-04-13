@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact GridMind — AI Energy Advisory</title>
+<meta name="description" content="Start a conversation with GridMind. Whether you're evaluating a single project or transforming your advisory workflow, we'll scope the right engagement.">
+<meta property="og:title" content="Contact GridMind — AI Energy Advisory">
+<meta property="og:description" content="Reach GridMind for AI-powered energy advisory. Telegram, email, or phone — we respond within 24 hours.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://gridmind.co.in/contact.html">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ═══ NAVIGATION ═══ -->
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav__logo">GridMind</a>
+  <ul class="nav__links">
+    <li><a href="platform.html">Deliverables</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="moat.html">Our Approach</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><button class="nav__theme" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">&#9790;</button></li>
+  </ul>
+  <button class="nav__hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav__overlay" id="navOverlay">
+    <a href="platform.html">Deliverables</a>
+    <a href="services.html">Services</a>
+    <a href="moat.html">Our Approach</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <button class="nav__theme" onclick="toggleTheme()" aria-label="Toggle dark mode">&#9790;</button>
+  </div>
+</nav>
+
+<main id="main">
+
+<!-- ═══ CONTACT HEADER ═══ -->
+<section class="section">
+  <div class="container">
+    <div data-animate>
+      <div class="sl">CONTACT</div>
+      <div class="st">Start a Conversation</div>
+      <div class="hrl"></div>
+      <div class="sd">Whether you're evaluating a single project or transforming your advisory workflow, we'll scope the right engagement.</div>
+    </div>
+
+    <!-- ═══ TWO-COLUMN LAYOUT ═══ -->
+    <div class="g2" data-animate data-delay="2">
+
+      <!-- LEFT COLUMN: Contact Form -->
+      <div>
+        <form id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" name="name" id="name" class="form-input" required placeholder="Your full name">
+            <div class="form-error">Please enter your name</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="organization">Organization</label>
+            <input type="text" name="organization" id="organization" class="form-input" placeholder="Company or institution">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="role">Role</label>
+            <select name="role" id="role" class="form-select">
+              <option value="">Select your role...</option>
+              <option value="IPP">IPP</option>
+              <option value="DISCOM">DISCOM</option>
+              <option value="State/Central Genco">State/Central Genco</option>
+              <option value="PE/Infrastructure Fund">PE/Infrastructure Fund</option>
+              <option value="Lender/DFI">Lender/DFI</option>
+              <option value="Regulator">Regulator</option>
+              <option value="Research Institution">Research Institution</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-input" required placeholder="you@company.com">
+            <div class="form-error">Please enter a valid email</div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" class="form-input" placeholder="+91-XXXXXXXXXX">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="project_type">Project Type</label>
+            <select name="project_type" id="project_type" class="form-select">
+              <option value="">Select project type...</option>
+              <option value="Solar">Solar</option>
+              <option value="Wind">Wind</option>
+              <option value="BESS">BESS</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Pumped Hydro">Pumped Hydro</option>
+              <option value="Green Hydrogen">Green Hydrogen</option>
+              <option value="Thermal">Thermal</option>
+              <option value="Round-the-Clock">Round-the-Clock</option>
+              <option value="EV">EV</option>
+              <option value="Portfolio/Multi-asset">Portfolio/Multi-asset</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea name="message" id="message" class="form-textarea" required placeholder="Tell us about your project or inquiry..."></textarea>
+            <div class="form-error">Please enter a message</div>
+          </div>
+          <button type="submit" class="cta-btn" style="margin-top:16px">Submit Inquiry</button>
+        </form>
+
+        <div class="form-success">
+          <div class="form-success__check">&#10003;</div>
+          <p class="form-success__text">Thank you.</p>
+          <p class="form-success__sub">We'll respond within 24 hours.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Direct Channels -->
+      <div>
+        <div class="c">
+          <p style="font-family:'Playfair Display',serif;font-size:16px;font-weight:600;margin-bottom:8px">Direct Channels</p>
+          <div class="hrl"></div>
+
+          <div style="margin-bottom:20px">
+            <p class="su">TELEGRAM (PRIMARY)</p>
+            <a href="https://t.me/GridMindBot" style="font-family:var(--sf);font-size:16px;font-weight:600">t.me/GridMindBot</a>
+          </div>
+
+          <div style="margin-bottom:20px">
+            <p class="su">EMAIL</p>
+            <a href="mailto:satya@gridmindlabs.in" style="font-size:15px;color:var(--ink-mid)">satya@gridmindlabs.in</a>
+          </div>
+
+          <div style="margin-bottom:24px">
+            <p class="su">PHONE</p>
+            <span style="font-size:15px;color:var(--ink-mid)">+91-8700518103</span>
+          </div>
+
+          <div class="hrf"></div>
+
+          <p style="font-family:'Playfair Display',serif;font-size:14px;font-weight:600;margin-top:20px;margin-bottom:6px">Response Commitment</p>
+          <p style="font-size:13px;color:var(--ink-mid);margin-bottom:4px">We respond to every inquiry within 24 hours.</p>
+          <p style="font-size:12px;color:var(--ink-faint)">For urgent project evaluations, message us directly on Telegram.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__logo">GridMind</div>
+    <div class="footer__rule"></div>
+    <div class="footer__tagline">Structural Advisory in Energy Markets</div>
+    <ul class="footer__nav">
+      <li><a href="platform.html">Deliverables</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="moat.html">Our Approach</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <p class="footer__copy">gridmind.co.in &nbsp;&bull;&nbsp; &copy; 2026 GridMind. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+/* ═══════════════════════════════════════════════════════════════
+   GridMind Page-Specific Styles
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Hero ─────────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 40px;
+}
+
+.hero__logo {
+  font-family: var(--sc);
+  font-size: var(--fs-hero);
+  font-weight: 500;
+  letter-spacing: 8px;
+  color: var(--ink);
+}
+
+.hero__rule {
+  width: min(400px, 80vw);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--rule), transparent);
+  margin: 14px auto 12px;
+}
+
+.hero__tagline {
+  font-family: var(--bd);
+  font-size: 14px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+}
+
+.hero__sanskrit {
+  font-family: var(--dv);
+  font-size: 13px;
+  color: var(--ink-faint);
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.hero__pitch {
+  font-family: var(--sf);
+  font-size: var(--fs-subtitle);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.4;
+  max-width: 660px;
+  margin: 52px auto 0;
+}
+
+.hero__stats {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-top: 40px;
+}
+.hero__stats .stat {
+  text-align: center;
+}
+.hero__stats .stat__divider {
+  width: 1px;
+  background: var(--rl);
+  align-self: stretch;
+}
+
+.hero__cta {
+  margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+  .hero { padding: 100px 16px 40px; }
+  .hero__stats { gap: 24px; flex-wrap: wrap; }
+  .hero__stats .stat__divider { display: none; }
+  .hero__logo { letter-spacing: 4px; }
+}
+
+/* ── Timeline (60-minute flow) ────────────────────────────── */
+.timeline-card {
+  padding: 18px 16px;
+  border-top: 3px solid var(--ink);
+}
+.timeline-card__time {
+  font-family: var(--sf);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1;
+}
+.timeline-card__label {
+  font-size: 8px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+  margin: 4px 0 10px;
+}
+.timeline-card__desc {
+  font-size: 12px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+/* ── Execution Engine ─────────────────────────────────────── */
+.exec-engine {
+  border: 1.5px solid var(--rl);
+  padding: 20px 24px;
+  background: var(--bg-card);
+}
+.exec-engine__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.exec-engine__time {
+  font-size: 8px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  font-weight: 600;
+}
+.exec-engine__title {
+  font-family: var(--sf);
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 12px;
+}
+.exec-engine__subtitle {
+  font-size: 11px;
+  color: var(--ink-faint);
+}
+.exec-engine__grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+@media (max-width: 768px) {
+  .exec-engine__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .exec-engine__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Sectors Strip ────────────────────────────────────────── */
+.sectors {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 40px 0;
+}
+
+/* ── Bottom Stats Row ─────────────────────────────────────── */
+.stats-row {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 24px;
+}
+@media (max-width: 768px) {
+  .stats-row { gap: 24px; flex-wrap: wrap; }
+}
+
+/* ── Architecture Diagram ─────────────────────────────────── */
+.arch-flow {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.arch-flow svg {
+  width: 100%;
+  height: auto;
+}
+
+/* ── Moat Visual ──────────────────────────────────────────── */
+.moat-layout {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+.moat-visual {
+  flex: 0 0 340px;
+  position: relative;
+  height: 340px;
+}
+.moat-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.moat-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.moat-item__num {
+  flex: 0 0 28px;
+  height: 28px;
+  background: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--sf);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--bg);
+}
+.moat-item__title {
+  font-family: var(--sf);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.moat-item__desc {
+  font-size: 12px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .moat-layout { flex-direction: column; }
+  .moat-visual { flex: none; width: 100%; max-width: 340px; margin: 0 auto; }
+}
+
+/* ── Founder Profile ──────────────────────────────────────── */
+.founder-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2.5px solid var(--rule);
+  object-fit: cover;
+  margin: 0 auto 14px;
+}
+.founder-name {
+  font-family: var(--sf);
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+}
+.founder-title {
+  font-family: var(--bd);
+  font-size: 15px;
+  color: var(--ink-mid);
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+/* ── Experience Cards ─────────────────────────────────────── */
+.exp-card {
+  text-align: center;
+  padding: 18px 14px;
+}
+.exp-card__company {
+  font-family: var(--sf);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.exp-card__role {
+  font-size: 11px;
+  color: var(--ink-mid);
+}
+.exp-card__details {
+  font-size: 10px;
+  color: var(--ink-faint);
+  margin-top: 4px;
+}
+
+/* ── Contact Form ─────────────────────────────────────────── */
+.form-group {
+  margin-bottom: 24px;
+}
+.form-label {
+  display: block;
+  font-family: var(--bd);
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--ink-light);
+  margin-bottom: 6px;
+}
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--rl);
+  background: transparent;
+  font-family: var(--bd);
+  font-size: 16px;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.2s var(--ease);
+}
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  border-bottom-color: var(--ink);
+}
+.form-input.error { border-bottom-color: var(--danger); }
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%237A7E8E' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0 center;
+  padding-right: 20px;
+}
+.form-error {
+  font-size: 11px;
+  color: var(--danger);
+  margin-top: 4px;
+  display: none;
+}
+.form-group.has-error .form-error { display: block; }
+
+.form-success {
+  text-align: center;
+  padding: 40px;
+  display: none;
+}
+.form-success.is-visible { display: block; }
+.form-success__check {
+  font-size: 48px;
+  color: var(--success);
+  margin-bottom: 16px;
+}
+.form-success__text {
+  font-family: var(--sf);
+  font-size: 20px;
+  font-weight: 600;
+}
+.form-success__sub {
+  color: var(--ink-mid);
+  margin-top: 8px;
+}
+
+/* ── Service Tier Cards ───────────────────────────────────── */
+.tier-card {
+  text-align: center;
+}
+.tier-card__price {
+  font-family: var(--sf);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 8px 0 4px;
+}
+.tier-card__unit {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-mid);
+}
+.tier-card--future {
+  opacity: 0.7;
+  border-style: dashed;
+}
+
+/* ── Tailwind stat ────────────────────────────────────────── */
+.tw-stat {
+  border-left: 3px solid var(--ink);
+  padding-left: 16px;
+}
+.tw-stat__num {
+  font-family: var(--sf);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+.tw-stat__desc {
+  font-size: 13px;
+  color: var(--ink-mid);
+  line-height: 1.5;
+  margin-top: 4px;
+}
