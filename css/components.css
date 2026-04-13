@@ -107,7 +107,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  padding-top: var(--nav-h);
+  gap: 28px;
 }
 .nav.is-open .nav__overlay {
   display: flex;
