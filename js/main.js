@@ -224,25 +224,25 @@
         submitBtn.textContent = 'SENDING...';
         submitBtn.style.pointerEvents = 'none';
 
-        // Formspree submission
+        // FormSubmit.co submission
         var formData = new FormData(form);
         fetch(form.action, {
           method: 'POST',
           body: formData,
           headers: { 'Accept': 'application/json' }
         }).then(function (response) {
-          if (response.ok) {
+          if (response.ok || response.status === 200) {
             form.style.display = 'none';
             document.querySelector('.form-success').classList.add('is-visible');
           } else {
             submitBtn.textContent = 'SUBMIT INQUIRY';
             submitBtn.style.pointerEvents = '';
-            alert('Something went wrong. Please try again or contact us directly.');
+            alert('Something went wrong. Please try again or email satya@gridmindlabs.in directly.');
           }
         }).catch(function () {
-          // Fallback: show success anyway (for local testing without Formspree)
-          form.style.display = 'none';
-          document.querySelector('.form-success').classList.add('is-visible');
+          submitBtn.textContent = 'SUBMIT INQUIRY';
+          submitBtn.style.pointerEvents = '';
+          alert('Network error. Please email satya@gridmindlabs.in directly.');
         });
       });
 
