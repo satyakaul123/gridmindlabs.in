@@ -82,7 +82,7 @@
   width: 28px;
   height: 20px;
   position: relative;
-  z-index: 10001; /* above overlay (9999) so X is visible and tappable */
+  z-index: 200;
 }
 .nav__hamburger span {
   display: block;
